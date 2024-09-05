@@ -1,0 +1,114 @@
+$font-family: 'Inter', sans-serif;
+
+// Colorss
+$primary-color: #0071E3;
+$secondary-color: #EAF4FF;
+$success-color: #027A48;
+$white-color: #FFFFFF;
+$danger-color: #B42318;
+$blue-color: #363F72;
+$gray1: #FCFCFD;
+$gray2: #F9FAFB;
+$gray3: #F2F4F7;
+$gray4: #E4E7EC;
+$gray5: #D0D5DD;
+$gray6: #98A2B3;
+$gray7: #667085;
+$gray8: #475467;
+$gray9: #344054;
+$gray10: #1D2939;
+$gray11: #101828;
+
+// old variables
+$primary-shadow-color: #445bc7;
+$grey-color: #696871;
+$primary-text-color: #262626;
+$info-color: #2DA9BD;
+$black-color: #000;
+$light-black: #1F1F1F;
+// $danger-color:#C92938;
+$success-color: #1A8533;
+$warning-color: #F2C029;
+$applied-color: #1A7D8D;
+$light-grey: #71717A;
+$black-light: #3F3F46;
+$link-color: #1973B9;
+$side-menu-color: #0050aa;
+
+// Background colors
+$primary-bg-color: #0071E3;
+$secondary-bg-color: #EAF4FF;
+$bg-white: #FFFFFF;
+$bg-gray2: #F9FAFB;
+$privacy-bg: #FFFAEB;
+
+// Old variables
+$bg-grey: #F7F7FB;
+$bg-input-gray: #EFF0F6;
+$bg-disable: #AFAFAF;
+$bg-black: #1F1F1F;
+$bg-info : #2DA9BD;
+$bg-light-gray: #E8E8E8;
+$bg-green: #22A640;
+$bg-light-blue: #DEEBFF;
+$bg-light-orange: #FFEBE6;
+
+// Font Size
+$font-size-large: 2.2rem;
+$font-size-normal: 1.6rem;
+$font-size-small: 1.4rem;
+
+$font-size-13: 13px;
+$font-size-14: 14px;
+$font-size-16: 16px;
+$font-size-18: 18px;
+$font-size-20: 20px;
+$font-size-24: 24px;
+$font-size-25: 25px;
+
+// Spacing
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$desktop-breakpoint: 45rem;
+
+:root {
+  --primary-color: #0071E3;
+  --secondary-color: #EBFFEB;
+  --dashboard-color: #fff;
+  --font-family: 'Inter', sans-serif;
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-36: 36px;
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-size-header: 14px;
+  --gray1: #FCFCFD;
+  --gray2: #F9FAFB;
+  --gray3: #F2F4F7;
+  --gray4: #E4E7EC;
+  --gray5: #D0D5DD;
+  --gray6: #98A2B3;
+  --gray7: #667085;
+  --gray8: #475467;
+  --gray9: #344054;
+  --gray10: #1D2939;
+  --gray11: #101828;
+  --background-image: "none";
+  --letter-spacing: 0.00938em;
+  --toast-image-height: 20px;
+  --loader-bg: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  padding-right: 0 !important;
+  overflow: auto !important;
+}

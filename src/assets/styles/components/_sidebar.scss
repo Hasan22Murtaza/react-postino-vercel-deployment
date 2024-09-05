@@ -1,0 +1,49 @@
+$color_1: #727cf5;
+$color_2: red;
+
+.sidebar {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .sidebar-body {
+    overflow: auto;
+    max-height: 100vh;
+    max-height: calc(100vh - 50px);
+    .nav {
+      .nav-item {
+        .nav-link {
+          .link-title {
+            // margin-left: 14px;
+            font-size: 14px;
+          }
+        }
+      }
+      .nav-item.active {
+        .nav-link {
+          color: $color_1;
+        }
+      }
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  color: $color_2 !important;
+}

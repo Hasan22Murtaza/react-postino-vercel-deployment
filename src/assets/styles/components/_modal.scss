@@ -1,0 +1,422 @@
+#modal-title {
+  /* position: fixed;*/
+  width: 100%;
+  /* padding: 10px;*/
+  color: #1F1F1F;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-600);
+}
+
+#modal-description {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 10px 0;
+  padding: 5px;
+}
+.modal-content-survey {
+  #modal-description {
+    max-height: 400px;
+    overflow-y: auto;
+    margin: 10px 0;
+    padding: 5px;
+  }
+}
+.feebackModal-height {
+  max-height: 350px !important;
+}
+
+#modal-footer {
+  /* position: fixed;*/
+  /* bottom: 12px;*/
+}
+
+.modal-content.work-exclusivity-modal-content {
+  width: 550px !important;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  background-color: $bg-white;
+  padding: 25px;
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+.modal-content-survey {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 850px !important;
+  background-color: $bg-white;
+  padding: 25px;
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+.modal-neuro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 570px !important;
+  background-color: $bg-white;
+  padding: 25px;
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+.modal-content-feedback {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px !important;
+  background-color: $bg-white;
+  padding: 25px;
+  border-radius: 8px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.modalStyle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 32px;
+  width: 410px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: white;
+  &:focus-visible {
+    outline: none !important;
+  }
+}
+
+// @media screen and (min-width: 320px) and (max-width: 767px) {
+//     .modal-content{
+//         width: 380px;
+//     }
+// }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-content {
+    &.checklist-modal &.responsive-checklist-modal {
+      width: 380px !important;
+    }
+  }
+}
+
+#simple-popover-list {
+  .MuiPaper-root {
+    &.MuiPopover-paper {
+      filter: drop-shadow(0px 0px 0px rgba(234, 233, 242, 0.4)) !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+.MuiPopover-paper {
+  .MuiMenuItem-root {
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+}
+
+.skills-footer {
+  position: fixed;
+  bottom: 30px;
+}
+
+.nav__submenu,
+.navBar__submenu {
+  display: none;
+}
+
+.nav__menu-item:hover {
+
+  .nav__submenu,
+  .navBar__submenu {
+    display: flex;
+  }
+}
+
+$color-blue: #00aeef;
+$color-blue-dark: #0d2035;
+$submenu-width: 180px;
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size-16);
+  line-height: 1.5;
+}
+
+.menu-container {
+  text-align: center;
+}
+
+nav {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.nav {
+a {
+  display: block;
+  line-height: inherit;
+  cursor: pointer;
+  //color:#FFFFFF !important;
+  font-family: var(--font-family) !important;
+}
+}
+
+.nav__menu-item {
+  display: flex;
+  position: relative;
+
+  &:hover {
+    .nav__submenu {
+      display: block;
+      // padding:10px !important;
+      background-color: #FFFFFF !important;
+      border-radius: 0px !important;
+      // color: #FFFFFF !important;
+      margin-top: 0px !important;
+      left: 55px;
+      // bottom: -29px;
+      margin-top: -21px !important;
+      border: 1px solid #EAE9F2;
+      box-shadow: 0px 6px 14px -6px rgba(90, 136, 193, 0.12), 0px 10px 32px -4px rgba(90, 136, 193, 0.12);
+    }
+  }
+}
+
+.nav__menu-item {
+  display: flex;
+  position: relative;
+
+  &:hover {
+    .navBar__submenu {
+      display: block;
+      // padding:10px !important;
+      background-color: FFFFFF !important;
+      border-radius: 0px !important;
+      // color: #FFFFFF !important;
+      margin-top: -18.5px !important;
+      left: 125px;
+      position: fixed !important;
+      border: 1px solid #E4E4E7;
+      box-shadow: 0px 3.12501px 35.1564px rgba(0, 0, 0, 0.08);
+    }
+  }
+}
+
+.nav__submenu,
+.navBar__submenu {
+  font-weight: 300;
+  text-transform: none;
+  display: none;
+  position: absolute;
+  width: 110px;
+  background-color: #FFFFFF;
+}
+
+.nav__submenu-item {
+  margin: 0px !important;
+  padding-left: 0px !important;
+  // padding: 12px 0 !important;
+
+  &:hover {
+    margin: 0px !important;
+    padding-left: 0px !important;
+    background: rgba(68, 91, 199, 0.2);
+  }
+}
+.menu-list{
+  .navBar__submenu, .nav__menu{
+    .nav__submenu-item, .nav__menu-item {
+      text-align: left !important;
+    }
+  }
+}
+
+.nav__submenu-item {
+  a {
+    &:hover {
+      color: rgba(68, 91, 199, 1) !important;
+    }
+  }
+}
+
+.modal-content {
+  &.checklist-modal {
+    width: 900px !important;
+  }
+}
+
+.modal-content {
+  &.stepperview-modal {
+    width: 1024px !important;
+  }
+}
+
+/*Checklist job title background effect for selected*/
+.MuiMenuItem-root {
+  &.Mui-selected {
+    background-color: rgba(25, 118, 210, 0.08) !important;
+
+    :hover {
+      background-color: rgba(25, 118, 210, 0.08) !important;
+    }
+  }
+}
+
+.non-signin-modal {
+  #modal-description {
+    max-height: 365px !important;
+    padding-left: 7px !important;
+    padding-right: 20px !important;
+    min-height: 100%;
+  }
+}
+
+.analytic-res-align {
+  &:hover {
+    background: rgba(68, 91, 199, 0.2) !important;
+  }
+
+}
+.video-record{
+  #modal-description{
+    height:270px !important;
+  }
+}
+.videoSection-image{
+  height: 100%;
+  width: 76%;
+  top: 0;
+  position: absolute;
+  /*background-image: url('/assets/images/videoDefaultSection.svg');*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 52px;
+  img{
+    position: absolute;
+    left: 38px !important;
+    border-radius: 14px;
+    width: auto;
+    height: 250px;
+    right:0px !important;
+    display:none !important;
+  }
+}
+.video-section {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  /*background: rgba(0, 0, 0, .1);*/
+  video{
+    width: auto !important;
+    height:250px !important;
+    border-radius: 14px !important;
+    left: 90px !important;
+    position: absolute;
+    right:0px !important;
+  }
+
+}
+.profile-video-shadow{
+  position: absolute;
+  background-color: #1D2939;
+  opacity: 0.9;
+  width: 332px;
+  left: 174px !important;
+  top: 309px !important;
+  border-radius: 0px 0px 14px 14px;
+  right: 0px !important;
+}
+.overlayImage{
+  img{
+    position: absolute;
+    top: 108px;
+    left: -25px;
+  }
+}
+.profileMissingDetails{
+  padding-left: 0px !important;
+}
+.MuiDrawer-modal{
+  z-index: 9999999999;
+}
+// Haptic-bot css
+.haptik-xdk{
+  z-index: 999 !important;
+  right: 5px !important;
+}
+.unauthorise-modal{
+  width: 315px !important;
+}
+.minimized-view-v2{
+  margin-right: 8px !important;
+}
+// ndccbot
+.dsaas-chatbot-container{
+  z-index: 9;
+}
+#menu-gender, #menu-ethnicity{
+  .MuiPaper-root{
+    .MuiList-root{
+      .MuiMenuItem-root{
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.04) !important;
+        }
+      }
+    }
+  }
+}
+.modal-decline-offer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 570px !important;
+  background-color: $bg-white;
+  padding: 25px;
+  border-radius: 8px;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
